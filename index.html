@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Praktikum HTML</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont'; /* Beri nama font sesuai kebutuhan */
+            src: url('coffee_soda/Coffee Soda.ttf') format('truetype'); /* Path ke file font */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffebee; /* Warna pink lembut */
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center; /* Mengatur judul menjadi di tengah */
+            font-family: 'CustomFont', Arial, sans-serif; /* Terapkan font Dafont ke judul */
+            font-size: 48px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Soal Praktikum HTML</h1>
+    
+    <h2>1. Pertanyaan Seputar Tag</h2>
+    <ol>
+        <li>Apa yang dimaksud dengan tag pada HTML?</li>
+        <li>Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat pada semua jenis tag?</li>
+    </ol>
+
+    <h2>2. Pertanyaan Seputar Element</h2>
+    <ol>
+        <li>Apa yang dimaksud dengan element?</li>
+        <li>Apa yang dimaksud dengan tagname, attribute dan content pada element?</li>
+        <li>Apakah elemen dapat ditumpuk? Apa yang terjadi bila demikian?</li>
+    </ol>
+
+    <h2>3. Pertanyaan Seputar Anchor</h2>
+    <ol>
+        <li>Apa yang dimaksud dengan anchor?</li>
+        <li>Bagaimana caranya anchor dapat berfungsi, baik dari sisi pendefinisian ataupun pengaplikasiannya?</li>
+    </ol>
+
+    <h2>4. Pertanyaan Seputar Multimedia</h2>
+    <ul>
+        <li>Text
+            <ol>
+                <li>Sebutkan tag yang dapat digunakan untuk memanipulasi konten teks pada HTML, serta jelaskan fungsinya!</li>
+                <li>Sebutkan tag yang dapat digunakan untuk memanipulasi struktur konten teks pada HTML!</li>
+            </ol>
+        </li>
+        <li>Image
+            <ol>
+                <li>Apabila sebuah tag image tidak menampilkan gambar sebagaimana seharusnya, apa saja yang mungkin menyebabkan hal tersebut?</li>
+                <li>Apabila ternyata ada teks yang menggantikan gambar tersebut, apa yang sebenarnya terjadi? Jelaskan!</li>
+            </ol>
+        </li>
+        <li>Audio
+            <ol>
+                <li>Bagaimana caranya kita dapat memasukkan audio source dari web (non-lokal)? Jelaskan!</li>
+            </ol>
+        </li>
+        <li>Video
+            <ol>
+                <li>Apa yang biasanya terjadi apabila atribut autoplay pada tag video tidak berjalan? Apa yang anda harus lakukan sehingga atribut tersebut dapat berfungsi dengan semestinya?</li>
+            </ol>
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <h1>FORM IDENTITAS</h1>
+    <form action="celebration.html">
+        <fieldset>
+            <label for="nama"> Nama</label>
+            <input type="text" name="nama" id="nama" required autofocus>
+            <br><br>
+            <label for="nim"> NIM</label>
+            <input type="text" name="nim" id="nim" placeholder="Silahkan masukkan NIM anda" pattern="[0-9]{9}" required title="harus diisi 9 angka">
+            <br><br>
+            <label for="tanggal_pengumpulan">Tanggal Pengumpulan:</label>
+            <input type="date" name="tanggal_pengumpulan" id="tanggal_pengumpulan" required>
+            <br><br>
+            
+            <input type="submit" value="simpan">
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
